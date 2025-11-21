@@ -1,8 +1,8 @@
-import { Github, Linkedin, Facebook } from 'lucide-react'
+import { Github, Music2, Facebook } from 'lucide-react'
 
 const socials = [
-  { label: 'GitHub', icon: Github, href: 'https://github.com/ryanjakedaz' },
-  { label: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/in/ryanjakedaz' },
+  { label: 'GitHub', icon: Github, href: 'https://github.com/Sh1roe-Dev' },
+  { label: 'Tiktok', icon: Music2, href: 'https://www.tiktok.com/@rhyndz' },
   { label: 'Facebook', icon: Facebook, href: 'https://facebook.com/ryanjakedaz' },
 ]
 

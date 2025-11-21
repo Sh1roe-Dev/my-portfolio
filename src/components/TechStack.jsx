@@ -1,4 +1,4 @@
-import { Code, Cpu, GitBranch, Layers, Server, Sparkles } from 'lucide-react'
+import { Code, Cpu, GitBranch, Layers, Server, Sparkles, Database } from 'lucide-react'
 import SectionHeading from './SectionHeading'
 import { techStack } from '../data/content'
 
@@ -9,6 +9,7 @@ const iconMap = {
   layers: Layers,
   server: Server,
   'git-branch': GitBranch,
+  database: Database,
 }
 
 const TechStack = () => {

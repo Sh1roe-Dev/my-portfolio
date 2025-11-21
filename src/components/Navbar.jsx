@@ -1,27 +1,31 @@
-import { useState } from 'react'
-import { Menu, SunMedium, Moon, X } from 'lucide-react'
+import { useState } from "react";
+import { Menu, SunMedium, Moon, X } from "lucide-react";
 
 const Navbar = ({ sections, theme, onToggleTheme }) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   const handleNavClick = (id) => {
-    const el = document.getElementById(id)
+    const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      setOpen(false)
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      setOpen(false);
     }
-  }
+  };
 
   return (
     <header className="fixed inset-x-0 top-6 z-50">
       <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/20 bg-white/80 px-6 py-3 shadow-lg shadow-slate-950/5 backdrop-blur-xl dark:border-slate-800/60 dark:bg-slate-900/80">
         <div className="flex items-center gap-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-brand-500 to-brand-300 text-white font-semibold tracking-tight">
-            JD
+            RJD
           </div>
           <div>
-            <p className="text-sm font-semibold text-slate-900 dark:text-white">Ryan Jake Daz</p>
-            <p className="text-xs text-slate-500 dark:text-slate-400">Full-Stack Dev</p>
+            <p className="text-sm font-semibold text-slate-900 dark:text-white">
+              Ryan Jake Daz
+            </p>
+            <p className="text-xs text-slate-500 dark:text-slate-400">
+              Full-Stack Dev
+            </p>
           </div>
         </div>
 
@@ -43,7 +47,7 @@ const Navbar = ({ sections, theme, onToggleTheme }) => {
             className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-brand-400 hover:text-brand-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:hover:text-brand-200"
             aria-label="Toggle theme"
           >
-            {theme === 'dark' ? <SunMedium size={18} /> : <Moon size={18} />}
+            {theme === "dark" ? <SunMedium size={18} /> : <Moon size={18} />}
           </button>
           <button
             className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 transition hover:border-brand-400 hover:text-brand-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 md:hidden"
@@ -69,8 +73,7 @@ const Navbar = ({ sections, theme, onToggleTheme }) => {
         </div>
       )}
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
-
+export default Navbar;

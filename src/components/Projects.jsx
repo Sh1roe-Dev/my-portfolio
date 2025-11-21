@@ -8,26 +8,6 @@ const Projects = () => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        setLoading(true)
-        const res = await fetch('/api/projects')
-        if (!res.ok) throw new Error('Failed to load projects')
-        const data = await res.json()
-        if (Array.isArray(data) && data.length) {
-          setItems(data)
-        }
-      } catch (err) {
-        setError(err.message)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchProjects()
-  }, [])
-
   return (
     <section id="projects" className="section-padding">
       <SectionHeading
@@ -73,7 +53,7 @@ const Projects = () => {
                 ))}
               </div>
               <div className="mt-6 flex gap-3">
-                <a
+                {/* <a
                   href={project.demo}
                   target="_blank"
                   rel="noreferrer"
@@ -81,7 +61,7 @@ const Projects = () => {
                 >
                   <ArrowUpRight size={16} />
                   Live Demo
-                </a>
+                </a> */}
                 <a
                   href={project.repo}
                   target="_blank"

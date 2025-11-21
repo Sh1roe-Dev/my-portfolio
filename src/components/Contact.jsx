@@ -55,7 +55,7 @@ const Contact = () => {
                 required
                 value={form.name}
                 onChange={handleChange}
-                placeholder="Jane Developer"
+                placeholder="Shiroe Developer"
                 className="mt-2 w-full rounded-2xl border-slate-200 bg-white/70 text-slate-900 placeholder-slate-400 focus:border-brand-400 focus:ring-brand-400 dark:border-slate-700 dark:bg-slate-900/70 dark:text-white"
               />
             </div>
@@ -67,7 +67,7 @@ const Contact = () => {
                 required
                 value={form.email}
                 onChange={handleChange}
-                placeholder="jane@company.com"
+                placeholder="shiroe@company.com"
                 className="mt-2 w-full rounded-2xl border-slate-200 bg-white/70 text-slate-900 placeholder-slate-400 focus:border-brand-400 focus:ring-brand-400 dark:border-slate-700 dark:bg-slate-900/70 dark:text-white"
               />
             </div>

@@ -27,10 +27,10 @@ const Hero = () => {
             <Send size={18} />
             View Projects
           </a>
-          <button className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-slate-700 transition hover:border-brand-400 hover:text-brand-500 dark:border-slate-700 dark:text-slate-100">
+          {/* <button className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-slate-700 transition hover:border-brand-400 hover:text-brand-500 dark:border-slate-700 dark:text-slate-100">
             <Download size={18} />
             Download Resume
-          </button>
+          </button> */}
         </div>
       </div>
     </section>
